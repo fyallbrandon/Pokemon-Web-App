@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from "react";
 import Axios from "axios";
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Define the main component
 function App() {
