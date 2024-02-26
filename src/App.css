@@ -1,38 +1,73 @@
+@font-face {
+  font-family: 'Pokemon';
+  src: url('/Users/BrandonFyall/Library/Fonts/Pokemon Solid.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3b4cca;
+  font-family: 'Pokemon', sans-serif;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TitleSection, .DisplaySection {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #ffde00;
+  width: 100%;
+  max-width: 600px;
+}
+
+.TitleSection {
+  margin-bottom: 30px;
+}
+
+.TitleSection h1 {
+  font-size: 48px; 
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.TitleSection input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #3b4cca;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.TitleSection button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
   color: white;
+  padding-left: 10px;
+  background-color: #ff0000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.TitleSection button:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) scale(1.02);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DisplaySection h1, h3, h4 {
+  margin: 7px;
+}
+
+.DisplaySection img {
+  width: 300px;
 }
