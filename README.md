@@ -1,3 +1,8 @@
+# Pokemon Web App 
+<img width="1280" alt="Screen Shot 2024-02-25 at 6 55 00 PM" src="https://github.com/fyallbrandon/pokemon-web-app/assets/156007704/abe4bea6-2b8f-4848-890b-6b50298c7be5">
+
+This project utilizes React to create a web application for accessing Pokemon data from the PokeAPI. Users can search for Pokemon by name and view detailed statistics including HP, attack, defense, type, and species. The application fetches data from the PokeAPI using Axios and presents it in a user-friendly interface.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
